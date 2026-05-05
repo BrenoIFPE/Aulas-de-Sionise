@@ -1,0 +1,10 @@
+pessoa = {}
+
+# Dados que foram coletados da pessoa
+pessoa["nome"] = input("Digite seu nome: ").strip()
+pessoa["idade"] = int(input("Digite sua idade: "))
+pessoa["sexo"] = input("Digite seu sexo: ").strip()
+
+print("\n--- Dados cadastrados ---")
+for chave, valor in pessoa.items():
+    print(f"{chave.capitalize()}: {valor}")
