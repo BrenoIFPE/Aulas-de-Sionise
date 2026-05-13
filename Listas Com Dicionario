@@ -1,0 +1,24 @@
+aluno = [
+    {
+        "nome":"Breno Silva Bustorff",
+        "data de nascimente":"04/07/2009",
+        "CPF":1234,
+        "RG":4321,
+        "telefone":81993370286,
+    },
+    {
+        "nome":"Mícaias Linux",
+        "data de nascimente":"11/04/2009",
+        "CPF":1234,
+        "RG":4321,
+        "telefone":81987634623,
+    },
+    {
+        "nome":"Vitor Jaquiera Lion da Silva",
+        "data de nascimente":"05/09/2009",
+        "CPF":1234,
+        "RG":4321,
+        "telefone":81954520265,
+    } 
+]
+print (aluno)
