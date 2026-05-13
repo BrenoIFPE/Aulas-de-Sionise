@@ -1,3 +1,5 @@
+#DICIONARIO MAIS ORGANIZADO
+
 pessoa = {}
 
 # Dados que foram coletados da pessoa
@@ -8,3 +10,14 @@ pessoa["sexo"] = input("Digite seu sexo: ").strip()
 print("\n--- Dados cadastrados ---")
 for chave, valor in pessoa.items():
     print(f"{chave.capitalize()}: {valor}")
+
+#DICIONARIO MAIS SIMPLES
+
+dicionario = {
+                "nome":"Breno Silva Bustorff",
+              "data de nascimento":"04/07/2009",
+              "CPF":160.**1.*5*-26,
+              "RG":160.**1.*5*-26,
+              "telefone":81993370286
+}
+print (dicionario)
