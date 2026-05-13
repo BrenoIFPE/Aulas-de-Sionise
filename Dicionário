@@ -6,6 +6,9 @@ pessoa = {}
 pessoa["nome"] = input("Digite seu nome: ").strip()
 pessoa["idade"] = int(input("Digite sua idade: "))
 pessoa["sexo"] = input("Digite seu sexo: ").strip()
+pessoa["telefone"] = int(input("Digite seu telefone: "))
+pessoa["CPF"] = input("Digite seu CPF: ").strip()
+pessoa["RG"] = input("Digite seu RG: ").strip()
 
 print("\n--- Dados cadastrados ---")
 for chave, valor in pessoa.items():
