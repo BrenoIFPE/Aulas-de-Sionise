@@ -22,3 +22,108 @@ aluno = [
     } 
 ]
 print (aluno)
+
+
+
+
+#Copa 2026
+
+Brasil = [
+    {
+        "nome da seleção":"Brasil",
+        "goleiro principal":"Alison",
+        "tecnico":"Ancelotti",
+        "titulos":5 
+    } 
+]
+print (Brasil)
+
+Franca = [
+    {
+        "nome da seleção":"França",
+        "goleiro principal":"Miker maignan",
+        "tecnico":"Didier Deschamps",
+        "titulos":2
+    }
+]
+print (Franca)
+
+portugal = [
+    {
+        "nome da seleção":"Portugal",
+        "tecnico":"Roberto Martínez",
+        "goleiro principal":"Diogo Costa",
+        "titulos":0
+    }
+]
+print (portugal)
+
+
+
+
+
+Copa2026 =[
+    {
+        "seleção":"Brasil",
+        "goleiro":"Alison",
+        "tecnico":"Ancelotti",
+        "titulos":5 
+    },
+    {
+        "seleção":"França",
+        "goleiro":"Miker maignan",
+        "tecnico":"Didier Deschamps",
+        "titulos":2
+    },
+    {
+        "seleção":"Portugal",
+        "goleiro":"Diogo Costa",
+        "tecnico":"Roberto Martínez",
+        "titulos":0
+    }
+]
+print (Copa2026)
+
+for time in Copa2026:
+    print("Nome da seleção: ", time["seleção"])
+    print("Técnico do time: ", time["tecnico"])
+    print(f"Goleiro principal: {time["goleiro"]}")
+    print(f"Quantidade de títulos: {time["titulos"]}")
+    print()
+
+
+
+
+
+Copa2026 =[
+    {
+        "seleção":"Brasil",
+        "goleiro":"Alison",
+        "tecnico":"Ancelotti",
+        "titulos":5 
+    },
+    {
+        "seleção":"França",
+        "goleiro":"Miker maignan",
+        "tecnico":"Didier Deschamps",
+        "titulos":2
+    },
+    {
+        "seleção":"Portugal",                                       TEM COISA PARA CONSERTAR AINDA!!!!!!
+        "goleiro":"Diogo Costa",
+        "tecnico":"Roberto Martínez",
+        "titulos":0
+    }
+]
+print (Copa2026)
+
+maior = Copa2026[0]
+
+for time in Copa2026:
+    print("Nome da seleção: ", time["seleção"])
+    print("Técnico do time: ", time["tecnico"])
+    print(f"Goleiro principal: {time["goleiro"]}")
+    print(f"Quantidade de títulos: {time["titulos"]}")
+    print()
+
+print("A seleção com maior título é: ", maior["selecao"])
