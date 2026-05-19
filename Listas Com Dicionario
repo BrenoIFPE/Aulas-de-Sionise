@@ -109,7 +109,7 @@ Copa2026 =[
         "titulos":2
     },
     {
-        "seleção":"Portugal",                                       TEM COISA PARA CONSERTAR AINDA!!!!!!
+        "seleção":"Portugal",                                       
         "goleiro":"Diogo Costa",
         "tecnico":"Roberto Martínez",
         "titulos":0
@@ -126,4 +126,4 @@ for time in Copa2026:
     print(f"Quantidade de títulos: {time["titulos"]}")
     print()
 
-print("A seleção com maior título é: ", maior["selecao"])
+print("A seleção com maior título é: ", maior["seleção"])
