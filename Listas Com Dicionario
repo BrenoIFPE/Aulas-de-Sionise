@@ -123,17 +123,18 @@ for time in Copa2026:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+print ("Bem Vindo a Venda Do B2")
+
 VendaDoB2 = [
     {"sabor": "Chocolate", "preco": 10, "quantidade": 5},
     {"sabor": "Morango", "preco": 12, "quantidade": 3},
     {"sabor": "Baunilha", "preco": 8, "quantidade": 7}
 ]
 
-# Mostrar produtos da VendaDoB2
 for p in VendaDoB2:
     print(p)
 
-total_de_compras = 0
+total = 0
 
 while True:
     continuar = input("Deseja comprar? (s/n): ")
@@ -141,26 +142,26 @@ while True:
     if continuar == "n":
         break
 
-    sabor = input("Qual sabor deseja? ")
+    else:
+        sabor = input("Qual sabor deseja? ")
 
-    for p in VendaDoB2:
+        for p in VendaDoB2:
 
-        if p["sabor"].lower() == sabor.lower():
+            if p["sabor"].lower() == sabor.lower():
 
-            quantidade = int(input("Quantidade: "))
+                quantidade = int(input("Quantidade: "))
 
-            if quantidade <= p["quantidade"]:
+                if quantidade <= p["quantidade"]:
 
-                total = quantidade * p["preco"]
-                total_de_compras += total
-                p["quantidade"] -= quantidade
+                    total = quantidade * p["preco"]
+                    p["quantidade"] -= quantidade
 
-                print("Compra realizada!")
+                    print("Compra realizada!")
 
-            else:
-                print("Sem estoque!")
+                else:
+                    print("Sem estoque!")
 
-print("Total de compras:", total_de_compras)
+print("Total de compras:", total)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -181,10 +182,3 @@ print("Total de compras:", total_de_compras)
 
 
 
-
-
-
-
-
-
-print("A seleção com maior título é: ", maior["seleção"])
