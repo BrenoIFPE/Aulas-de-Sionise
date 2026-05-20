@@ -23,8 +23,7 @@ aluno = [
 ]
 print (aluno)
 
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Copa 2026
 
@@ -58,9 +57,7 @@ portugal = [
 ]
 print (portugal)
 
-
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Copa2026 =[
     {
@@ -91,9 +88,7 @@ for time in Copa2026:
     print(f"Quantidade de títulos: {time["titulos"]}")
     print()
 
-
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Copa2026 =[
     {
@@ -125,5 +120,71 @@ for time in Copa2026:
     print(f"Goleiro principal: {time["goleiro"]}")
     print(f"Quantidade de títulos: {time["titulos"]}")
     print()
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VendaDoB2 = [
+    {"sabor": "Chocolate", "preco": 10, "quantidade": 5},
+    {"sabor": "Morango", "preco": 12, "quantidade": 3},
+    {"sabor": "Baunilha", "preco": 8, "quantidade": 7}
+]
+
+# Mostrar produtos da VendaDoB2
+for p in VendaDoB2:
+    print(p)
+
+total_de_compras = 0
+
+while True:
+    continuar = input("Deseja comprar? (s/n): ")
+
+    if continuar == "n":
+        break
+
+    sabor = input("Qual sabor deseja? ")
+
+    for p in VendaDoB2:
+
+        if p["sabor"].lower() == sabor.lower():
+
+            quantidade = int(input("Quantidade: "))
+
+            if quantidade <= p["quantidade"]:
+
+                total = quantidade * p["preco"]
+                total_de_compras += total
+                p["quantidade"] -= quantidade
+
+                print("Compra realizada!")
+
+            else:
+                print("Sem estoque!")
+
+print("Total de compras:", total_de_compras)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 print("A seleção com maior título é: ", maior["seleção"])
