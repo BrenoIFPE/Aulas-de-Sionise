@@ -1,0 +1,50 @@
+def sair ():
+    print ("Até Mais Volte Sempre!!")
+
+def comprar_figurinha ():
+    print ("Comprar Pacote De Figurinhas")
+
+def comprar_album ():
+    print ("Comprar Albúm")
+
+def entrar_grupo ():
+    print ("Entrar No Grupo De Troca De Figurinhas")
+
+    grupo = [] #Lista Vazia 
+    nome = input ("Digite Seu Nome: ")
+    telefone = input ("Digite Seu Número De Telefone: ")
+
+    #Dicionario
+    usuario = {
+        "nome": nome,
+        "telefone": telefone
+    }
+
+    #Inserir Dicionario Na Lista
+    grupo.append(usuario)
+
+    #Exibir lista dos participantes do grupo
+    print (grupo)
+
+
+#Programa Principal 
+while True:
+    print ("Bem-Vindo a Loja De Vendas De Figutinhas Da Copa. Escolha Uma Das Opções Abaixo")
+    print ("1-Comprar Pacote De Figurinhas")
+    print ("2-Comprar Albúm")
+    print ("3-Entrar No Grupo De Troca De Figurinhas")
+    print ("4-Sair Do Programa")
+    opcao = int(input("Escolha uma opção: "))  
+    
+    #Estrutura De Seleção: Ou match case ou if/elif
+    if opcao == 1:
+        comprar_figurinha()
+    elif opcao == 2:
+        comprar_album()
+    elif opcao == 3:
+        entrar_grupo()
+    elif opcao == 4:
+        sair()
+        break
+    else:
+        print ("Opção Inválida")
