@@ -48,3 +48,192 @@ while True:
         break
     else:
         print ("Opção Inválida")
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PARTE FEITA PELO CHATGPT PARA TREINAR 
+
+#Variáveis Globais
+grupo = []
+
+estoque_pacotes = 10
+
+estoque_capa_mole = 5
+estoque_capa_dura = 3
+estoque_luxo = 2
+
+preco_pacote = 7
+
+preco_capa_mole = 15
+preco_capa_dura = 25
+preco_luxo = 50
+
+
+def sair ():
+    print ("Até Mais Volte Sempre!!")
+
+
+def comprar_figurinha ():
+    global estoque_pacotes
+
+    print ("Comprar Pacote De Figurinhas")
+    print ("O Pacote Custa R$ 7,00")
+
+    quantidade = int(input("Quantos Pacotes Você Deseja ? "))
+
+    if quantidade <= estoque_pacotes:
+
+        valor_total = quantidade * preco_pacote
+
+        estoque_pacotes -= quantidade
+
+        print (f"{quantidade} Pacotes De Figurinhas Foram Adicionados")
+        print (f"Valor Total R$ {valor_total}")
+
+    else:
+
+        print ("Desculpe Não Temos Essa Quantidade")
+
+        if estoque_pacotes > 0:
+
+            valor_total = estoque_pacotes * preco_pacote
+
+            print (f"Só {estoque_pacotes} Pacotes Foram Adicionados")
+            print ("Não Temos Mais Em Estoque")
+            print (f"Valor Total R$ {valor_total}")
+
+            estoque_pacotes = 0
+
+        else:
+            print ("Produto Sem Estoque")
+
+
+def comprar_album ():
+
+    global estoque_capa_mole
+    global estoque_capa_dura
+    global estoque_luxo
+
+    print ("Comprar Albúm")
+
+    print ("Temos Os Modelos")
+    print (f"1-Capa Mole-R${preco_capa_mole}")
+    print (f"2-Capa Dura-R${preco_capa_dura}")
+    print (f"3-Edição Luxo Premium-R${preco_luxo}")
+
+    modelo = int(input("Escolha Um Modelo: "))
+    quantidade = int(input("Quantos Álbuns Você Deseja ? "))
+
+    if modelo == 1:
+
+        estoque = estoque_capa_mole
+        preco = preco_capa_mole
+        nome_modelo = "Capa Mole"
+
+    elif modelo == 2:
+
+        estoque = estoque_capa_dura
+        preco = preco_capa_dura
+        nome_modelo = "Capa Dura"
+
+    elif modelo == 3:
+
+        estoque = estoque_luxo
+        preco = preco_luxo
+        nome_modelo = "Luxo Premium"
+
+    else:
+        print ("Opção Inválida !")
+        return
+
+    if quantidade <= estoque:
+
+        valor_total = quantidade * preco
+
+        print (f"{quantidade} Álbum Do Modelo {nome_modelo} Foram Adicionados")
+        print ("No Carrinho")
+        print (f"Valor Total R$ {valor_total}")
+
+        if modelo == 1:
+            estoque_capa_mole -= quantidade
+
+        elif modelo == 2:
+            estoque_capa_dura -= quantidade
+
+        elif modelo == 3:
+            estoque_luxo -= quantidade
+
+    else:
+
+        print ("Desculpe Não Temos Essa Quantidade")
+
+        if estoque > 0:
+
+            valor_total = estoque * preco
+
+            print (f"Só {estoque} Álbuns Foram Adicionados")
+            print ("Não Temos Mais No Estoque")
+            print (f"Valor Total R$ {valor_total}")
+
+            if modelo == 1:
+                estoque_capa_mole = 0
+
+            elif modelo == 2:
+                estoque_capa_dura = 0
+
+            elif modelo == 3:
+                estoque_luxo = 0
+
+        else:
+            print ("Produto Sem Estoque")
+
+
+def entrar_grupo ():
+    global grupo
+
+    print ("Entrar No Grupo De Troca De Figurinhas")
+
+    nome = input ("Digite Seu Nome: ")
+    telefone = input ("Digite Seu Número De Telefone: ")
+
+    #Dicionario
+    usuario = {
+        "nome": nome,
+        "telefone": telefone
+    }
+
+    #Inserir Dicionario Na Lista
+    grupo.append(usuario)
+
+    print ("Você Foi Cadastrado Com Sucesso. Em Breve Adicionaremos No Grupo De Troca De Figurinhas.")
+
+    print (f"Já Temos {len(grupo)} Pessoas No Grupo")
+
+
+#Programa Principal
+while True:
+
+    print ("Bem-Vindo")
+    print ("1-Comprar Figurinha")
+    print ("2-Comprar Albúm")
+    print ("3-Entrar No Grupo")
+    print ("4-Sair")
+
+    opcao = int(input("Digite Sua opção: "))
+
+    #Estrutura De Seleção
+    if opcao == 1:
+        comprar_figurinha()
+
+    elif opcao == 2:
+        comprar_album()
+
+    elif opcao == 3:
+        entrar_grupo()
+
+    elif opcao == 4:
+        sair()
+        break
+
+    else:
+        print ("Opção Inválida")
