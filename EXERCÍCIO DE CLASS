@@ -1,0 +1,39 @@
+#Classe Aluno
+class Aluno:
+    #Método Construtor
+    def __init__(self, nome_aluno, matricula, idade, sexo, cpf, rg, email, telefone, cidade, nome_dos_pais):
+        #Atributos (Características da classe/objeto)
+        self.nome =nome_aluno
+        self.matricula = matricula
+        self.idade = idade
+        self.sexo = sexo
+        self.cpf = cpf
+        self.rg = rg
+        self.email = email
+        self.telefone = telefone
+        self.cidade = cidade
+        self.nome_dos_pais = nome_dos_pais
+class Prof:
+    def __init__(self, nome_prof, cidade, rg, cpf, email, telefone, tempo_de_ensino, sexo, formacao, mestrado):
+        self.nome_prof = nome_prof
+        self.cidade = cidade
+        self.rg = rg
+        self.cpf = cpf
+        self.email = email
+        self.telefone = telefone
+        self.tempo_de_ensino = tempo_de_ensino
+        self.sexo = sexo
+        self.formação = formacao
+        self.mestrado = mestrado
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Classe Aluno
+class Aluno:
+    #Método Construtor
+    def __init__(self, parametro1, parametro2):
+        #Atributos
+        self.atributo1 = parametro1
+        self.atributo2 = parametro2
+    def metodo(self)
+        #Código
