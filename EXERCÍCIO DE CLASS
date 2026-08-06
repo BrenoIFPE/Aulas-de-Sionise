@@ -55,6 +55,12 @@ class Aluno:
         self.telefone = telefone
         self.cidade = cidade
         self.nome_dos_pais = nome_dos_pais
+    def visualizarBoletim(self):
+        pass
+    def editarDados(self):
+        pass
+
+
 class Prof:
     def __init__(self, nome_prof, cidade, rg, cpf, email, telefone, tempo_de_ensino, sexo, formacao, mestrado):
         self.nome_prof = nome_prof
@@ -112,7 +118,7 @@ class Jogo:
         self.gênero = genero
         self.história = historia
         self.coop_ou_online = coop_ou_online
-class Pokémon:
+class Pokemon:
     def __init__(self, tipo, raridade, especie):
         self.tipo = tipo
         self.raridade = raridade
