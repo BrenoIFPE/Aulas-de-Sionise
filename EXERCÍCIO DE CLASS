@@ -37,3 +37,83 @@ class Aluno:
         self.atributo2 = parametro2
     def metodo(self)
         #Código
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Classe Aluno
+class Aluno:
+    #Método Construtor
+    def __init__(self, nome_aluno, matricula, idade, sexo, cpf, rg, email, telefone, cidade, nome_dos_pais):
+        #Atributos (Características da classe/objeto)
+        self.nome =nome_aluno
+        self.matricula = matricula
+        self.idade = idade
+        self.sexo = sexo
+        self.cpf = cpf
+        self.rg = rg
+        self.email = email
+        self.telefone = telefone
+        self.cidade = cidade
+        self.nome_dos_pais = nome_dos_pais
+class Prof:
+    def __init__(self, nome_prof, cidade, rg, cpf, email, telefone, tempo_de_ensino, sexo, formacao, mestrado):
+        self.nome_prof = nome_prof
+        self.cidade = cidade
+        self.rg = rg
+        self.cpf = cpf
+        self.email = email
+        self.telefone = telefone
+        self.tempo_de_ensino = tempo_de_ensino
+        self.sexo = sexo
+        self.formação = formacao
+        self.mestrado = mestrado
+class Televisão:
+    def __init__(self, ano, marca, modelo):
+        self.ano = ano
+        self.marca = marca
+        self.modelo = modelo
+class Carro:
+    def __init__(self, ano, marca, modelo):
+        self.ano = ano
+        self.marca = marca
+        self.modelo = modelo
+class Filme:
+    def __init__(self, genero, producao, elenco):
+        self.gênero = genero
+        self.produção = producao
+        self.elenco = elenco
+class Usuário:
+    def __init__(self, conta, senha, nome):
+        self.conta = conta
+        self.senha = senha
+        self.nome = nome
+class Bicicleta:
+    def __init__(self, aro, modelo, marca):
+        self.aro = aro
+        self.modelo = modelo
+        self.marca = marca
+class Conta_Bancária:
+    def __init__(self, senha, saldo, banco):
+        self.senha = senha
+        self.saldo = saldo
+        self.banco = banco
+class Livro:
+    def __init__ (self, nome, quantidade_de_paginas, autor):
+        self.nome = nome
+        self.quantidade_de_páginas = quantidade_de_paginas
+        self.autor = autor
+class Dida:
+    def __init__(self, sabor, marca, temperatura):
+        self.sabor = sabor
+        self.marca = marca
+        self.temperatura = temperatura
+class Jogo:
+    def __init__(self, genero, historia, coop_ou_online):
+        self.gênero = genero
+        self.história = historia
+        self.coop_ou_online = coop_ou_online
+class Pokémon:
+    def __init__(self, tipo, raridade, especie):
+        self.tipo = tipo
+        self.raridade = raridade
+        self.espécie = especie
