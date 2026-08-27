@@ -150,3 +150,35 @@ produto3 = Produto("Pícole", 1.50, 100)
 produto2.nome = "Dida"
 produto2.preco = 17
 produto2.exibir()
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class Filme:
+    def __init__(self,tempo, classificacao, produtora, elenco, genero, nome):
+        self.nome = nome
+        self.tempo = tempo
+        self.classificacao = classificacao
+        self.produtora = produtora
+        self.elenco = elenco
+        self.genero =genero
+class Series:
+    def __init__(self,quant_de_ep, classificacao, produtora, elenco, genero, nome):
+        self.nome = nome
+        self.quant_de_ep = quant_de_ep
+        self.classificacao = classificacao
+        self.produtora = produtora
+        self.elenco = elenco
+        self.genero = genero
+class Usuario:
+    def __init__(self,nome, senha, email, cartao_de_pagamento, banco):
+        self.nome = nome 
+        self.senha = senha
+        self.email = email
+        self.cartao_de_pagamento = cartao_de_pagamento
+        self.banco = banco
+
+filme1 = Filme("Homem Aranha Sem Volta para Casa", 2.28, 12, "Sony Pictures e Marvel Studios", "Tom Holland Zendaya Benedict Cumberbatch e Jacob Batalon", "Ação aventura ficção científica e super-herói")
+
+series1 = Series("Stranger Things", 34, 16, "Netflix", "Millie Bobby Brown Finn Wolfhard David Harbour Winona Ryder", "Ficção científica, terror drama e mistério")
+
+usuario1 = Usuario("Lucas Almeida", 856473, "lucas.almeida@example.com", 0000000000000000, "Nubank")
