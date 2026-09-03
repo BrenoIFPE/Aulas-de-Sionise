@@ -181,4 +181,38 @@ filme1 = Filme("Homem Aranha Sem Volta para Casa", 2.28, 12, "Sony Pictures e Ma
 
 series1 = Series("Stranger Things", 34, 16, "Netflix", "Millie Bobby Brown Finn Wolfhard David Harbour Winona Ryder", "Ficção científica, terror drama e mistério")
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#CRIA AS CLASSES
+class Pessoa:
+    def __init__(self,nome, idade):
+        self.nome = nome
+        self.idade = idade
+    def exibir(self):
+        print(f"nome: {self.nome}, idade: {self.idade}\n")
+
+class Professor(Pessoa):
+    pass
+class Aluno(Pessoa):
+    pass
+class TAE(Pessoa):
+    pass
+
+#Criar Instâncias - CRIA OS OBJETOS
+aluno1 = Aluno("João", 15)
+aluno2 = Aluno("Maria", 14)
+
+#Exibir Informações
+aluno1.exibir()
+aluno2.exibir()
+
+prof1 = Professor("Sionise", 30)
+prof2 = Professor("Josiel", 40)
+
+prof1.exibir()
+prof2.exibir()
+
+tae1 = TAE("José", 25)
+tae2 = TAE("Fernanda", 27)
+
 usuario1 = Usuario("Lucas Almeida", 856473, "lucas.almeida@example.com", 0000000000000000, "Nubank")
