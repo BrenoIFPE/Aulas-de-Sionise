@@ -216,3 +216,29 @@ tae1 = TAE("José", 25)
 tae2 = TAE("Fernanda", 27)
 
 usuario1 = Usuario("Lucas Almeida", 856473, "lucas.almeida@example.com", 0000000000000000, "Nubank")
+
+-------------
+
+class Jogador:
+
+    def __init__(self,nome,vida):
+        self.nome = nome
+        self.vida = vida
+
+    def exibir_jogador(self):
+        
+        print(f"nome: {self.nome} vida: {self.vida}")
+
+class Arqueiro(Jogador):
+
+    def __init__(self, nome, vida, flechas):
+        super().__init__(nome,vida)
+        self.flechas = flechas
+
+    def exibir_Jogador(self):
+        super().exibir_jogador()
+        print(f"Quantidade de flechas: {self.flechas}")
+
+j1 = Arqueiro("Vitor", 100, 50)
+
+j1.exibir_Jogador()
